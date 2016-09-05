@@ -26,7 +26,8 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/z3c/include
 BOARD_HARDWARE_CLASS += device/sony/z3c/cmhw
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_shinano_aries_defconfig
+TARGET_KERNEL_CONFIG := aopp_shinano_aries_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
